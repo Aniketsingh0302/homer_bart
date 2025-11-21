@@ -28,10 +28,10 @@ if uploaded:
     # Predict
     label, prob = predict_image(model, bytes_data)
 
-    st.subheader(f"🧠 Prediction: **{label}**")
+    st.subheader(f"So the name of the character you uploaded is : **{label}**")
 
    
-    st.write(f"Upload another image of your friend {lable} ")
+    st.write(f"Upload another image of your friend {label} ")
 
 
     st.write(f"Enjoyed the app? Share it with your friends! 🚀")
