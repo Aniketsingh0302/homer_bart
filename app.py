@@ -21,7 +21,7 @@ uploaded = st.file_uploader("Upload image", type=["jpg", "jpeg", "png", "bmp"])
 
 if uploaded:
     # Show image
-    st.image(uploaded, caption="Uploaded Image", width=300, height=300)
+    st.image(uploaded, caption="Uploaded Image", width=300)
 
     # Read image as bytes
     bytes_data = uploaded.read()
