@@ -21,8 +21,3 @@ def predict_image(model, path):
     prob =model.predict(img)[0][0] #predict for first element that's why [0][0]
     label =1 if prob >0.5 else 0
     return class_name[label],float(prob)
-if __name__ == "__main__":
-    import sys
-    image_path = sys.argv[1]
-    label, probability = predict_image(image_path)
-    print(f"Predicted Label: {label}, Probability: {probability:.4f}")
